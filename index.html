@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- шапка сторінки -->
+    <header class="header fixed">
+        <div class="container">
+            <div>
+                <a class="header-link" href="/">
+                    <svg class="logo" width="68" height="55">
+                        <use href="./images/icons/sprite.svg#icon-Logo"></use>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#abouts" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#prices" class="nav-link">Услуги и цены</a></li>
+                    <li class="nav-item"><a href="#masters" class="nav-link">Мастера</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                <ul class="nav-contacts">
+                    <li><a href="tel:+380441111111" class="nav-contact">+38 044 111 11 11</a></li>
+                    <li><a href="#registrations" class="online-registration-wt">онлайн-запись</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- головна секція -->
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <a href="" class="social-link pseudo">Instagram</a>
+                    </li>
+                    <li class="hero-item">
+                        <a href="" class="social-link ">Youtube</a>
+                    </li>
+                </ul>
+                <p class="hero-text-en pseudo sticky">A hair salon for men in Kyiv</p>
+                <div class="hero-box">
+                    <h1 class="hero-title">BarberShop</h1>
+                    <button type="btn" class="gallery">галерея</button>
+                </div>
+                
+                <p class="hero-text-ru">Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со вкусом.</p>
+                <ul class="hero-list-btn">
+                    <li class="hero-item">
+                        <button type="button" class="hero-btn">Назад</button>
+                    </li>
+                    <li class="hero-item">
+                        <button type="button" class="hero-btn-rt">Вперед</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- про нас -->
+        <section class="about">
+            <div class="about-content-box container">
+                <ul class="about-list">
+                    <li class="about-item">
+                        <img class="about-images" src="./images/img1.jpg" alt="ровняем бороду" width="270">
+                    </li>
+                    <li class="about-item">
+                        <img class="about-images" src="./images/img2.jpg" alt="подбреваем затылок" width="270">
+                    </li>
+                </ul>
+                <div class="about-box">
+                    <p class="about-text pseudo sticky" id="abouts">О НАС</p>
+                    <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+                    <h3 class="about-motivation">Если ты хочешь добавить в свой образ больше <br/> уверенности – тебе точно к нам.</h3>
+                    <p class="about-us">Мы команда, которая никогда не останавливается на достигнутом
+                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+                    готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <a href="" class="online-registration">онлайн-запись</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- послуги та ціни -->
+        <section class="price">
+            <div class="price-box container">
+                <p class="price-text pseudo sticky">Проведи время в компании лучших мастеров</p>
+                <h2 class="price-item" id="prices">Услуги и цены</h2>
+                <div class="table-wrapper">
+                    <table class="price-table">
+                        <tr class="table-row">
+                            <td class="price-list first">Мужская стрижка</td>
+                            <td class="price-list">от 300 грн.</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="price-list second">Стрижка бороды</td>
+                            <td class="price-list">от 200 грн.</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="price-list third">Стрижка усов</td>
+                            <td class="price-list">от 200 грн.</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="price-list fourth">Бритье опасной бритвой</td>
+                            <td class="price-list">от 200 грн.</td>
+                        </tr>
+                    </table>
+                    <table class="price-table">
+                        <tr class="table-row">
+                            <td class="price-list fifth">Cтрижка у стажера</td>
+                            <td class="price-list">от 50 грн.</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="price-list sixth">Стрижка под насадку</td>
+                            <td class="price-list">от 200 грн.</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="price-list seventh">Детская стрижка (до 12 лет)</td>
+                            <td class="price-list">от 300 грн.</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="price-list eighth">Камуфлирование седины</td>
+                            <td class="price-list">от 200 грн.</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="" class="online-registration-wt">онлайн-запись</a>
+            </div>
+        </section>
+
+        <!-- статистика -->
+        <section class="statistic">
+            <div class="statistic-box container">
+                <ul class="statistic-list">
+                    <li class="statistic-item">
+                        <p class="statistic-number">600<sup class="sup">+</sup></p>
+                        <p class="statistic-text">Довольных клиентов в день</p>
+                    </li>
+                    <li class="statistic-item">
+                        <p class="statistic-number">50<sup class="sup">+</sup></p>
+                        <p class="statistic-text">Наград за отличный сервис</p>
+                    </li>
+                    <li class="statistic-item">
+                        <p class="statistic-number">20<sup class="sup">+</sup></p>
+                        <p class="statistic-text">Лучших мастеров Киева</p>
+                    </li>
+                    <li class="statistic-item">
+                        <p class="statistic-number">100<sup class="sup">+</sup></p>
+                        <p class="statistic-text">Подарков постоянным клиентам</p>
+                    </li>
+                </ul>
+                <div class="statistic-info">
+                    <p class="statistic-text-pre pseudo sticky">старая традиционная школа</p>
+                    <h2 class="statistic-title">Почему приходят именно к нам?</h2>
+                    <p class="statistic-advantage">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- наші майстри -->
+        <section class="master">
+            <div class="masters-box container">
+                <p class="master-text pseudo sticky">для настоящих ценителей атмосферы</p>
+                <h2 class="master-title" id="masters">Наши мастера</h2>
+                <ul class="master-list">
+                    <li class="master-item">
+                        <img class="master-list-img" src="./images/barber1.jpg" alt="barber1" width="370">
+                        <h3 class="master-name">John Smith</h3>
+                        <p class="master-position">Extreme Barber</p>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="master-item">
+                        <img class="master-list-img" src="./images/barber2.jpg" alt="barber2" width="370">
+                        <h3 class="master-name">Michele Doe</h3>
+                        <p class="master-position">Extreme Barber</p>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="master-item">
+                        <img class="master-list-img" src="./images/barber3.jpg" alt="barber3" width="370">
+                        <h3 class="master-name">Alan Black</h3>
+                        <p class="master-position">Extreme Barber</p>
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <h2>барба</h2> -->
+        <section class="works">
+            <div class="works-box container">
+                <p class="works-text pseudo sticky">На латинском языке “барба” означает “борода”</p>
+                <ul class="works-list">
+                    <li class="works-title">
+                        <img class="works-pic" src="./images/pic1.jpg" alt="pic1" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                    <li class="works-title">
+                        <img class="works-pic" src="./images/pic2.jpg" alt="pic2" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                    <li class="works-title">
+                        <img class="works-pic" src="./images/pic3.jpg" alt="pic3" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                    <li class="works-title">
+                        <img class="works-pic" src="./images/pic4.jpg" alt="pic4" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- онлайн-запис -->
+        <section class="info">
+            <div class="info-box container">
+                <div class="form-wrapper">
+                    <h2 class="registrations" id="registrations">Онлайн-запись</h2>
+                    <form class="form-fild">
+                        <div class="group">
+                            <div class="form-fild-group">
+                                <label class="form-fild-name" for="name">Имя</label>
+                                <input class="input-box" type="text" name="user-name" id="name" autofocus />
+                            </div>
+                            <div class="form-fild-group">
+                                <label class="form-fild-name" for="tel">Телефон</label>
+                                <input class="input-box" type="tel" name="user-tel" id="tel" />
+                            </div>
+                        </div>
+                            
+                            <div class="form-fild-group">
+                                <label class="form-fild-name" for="tel">Почта</label>
+                                <input class="input-box form-fild-mail" type="email" name="user-mail" id="tel" />
+                            </div>
+
+                        <ul class="form-radio">
+                            <li class="form-radio-item">
+                                <input type="radio" name="Extreme-Barber" value="John-Smith" id="John-Smith" />
+                                <label for="John-Smith">John Smith</label>
+                            </li>
+                            <li class="form-radio-item">
+                                <input type="radio" name="Extreme-Barber" value="Michele-Doe" id="Michele-Doe" />
+                                <label for="Michele-Doe">Michele Doe</label>
+                            </li>
+                            <li class="form-radio-item">
+                                <input type="radio" name="Extreme-Barber" value="Alan-Black" id="Alan-Black" />
+                                <label for="Alan-Black">Alan Black</label>
+                            </li>
+                        </ul>
+                        <div class="form-date">
+                            <label for="data">Дата и время</label>
+                            <input type="datetime-local" name="data" id="data">
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <textarea class="text-box" placeholder="оставить коментарий"></textarea>
+                        </div>
+                        <button class="btn-send" type="submit">отправить</button>
+                    </form>
+                </div>
+                <div class="contacts-wrapper">
+                    <h2 class="info-contacts" id="contacts">Контакты</h2>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-title">
+                                <p class="address-text">ул. Васильковая, 7А
+                                Киев, 08132</p>
+                            </li>
+                            <li class="address-title">
+                                <a href="tel:+380441111111" class="address-tel">+38 044 111 11 11</a>
+                            </li>
+                            <li class="address-title">
+                                <a href="mail:barbershop@email.com" class="address-mail">barbershop@email.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div>
+                        <h3 class="work-time pseudo">время работы</h3>
+                        <p class="address-text">Ежедневно с 9:00 до 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- підвал -->
+    <footer class="footer">
+        <div class="footer-box container">
+            <p class="footer-text">&copy; Copyright 2022</p>
+            <ul class="footer-list pseudo">
+                <li class="footer-title">
+                    <a class="footer-link" href="">Instagram</a>
+                </li>
+                <li class="footer-title">
+                    <a class="footer-link" href="">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
