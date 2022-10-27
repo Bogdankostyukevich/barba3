@@ -319,43 +319,62 @@
                     <h2 class="registrations" id="registrations">Онлайн-запись</h2>
                     <form class="form-fild">
                         <div class="group">
-                            <div class="form-fild-group">
-                                <label class="form-fild-name" for="name">Имя</label>
-                                <input class="input-box" type="text" name="user-name" id="name" autofocus />
+                            <div class="form-fild-contacts">
+                                <input class="input-box input input-name" placeholder=" " type="text" name="user-name" id="name" autofocus />
+                                <label class="label" for="name" >Имя*</label>
                             </div>
-                            <div class="form-fild-group">
-                                <label class="form-fild-name" for="tel">Телефон</label>
-                                <input class="input-box" type="tel" name="user-tel" id="tel" />
+
+                            <div class="form-fild-contacts">
+                                <input class="input-box input input-tel" placeholder=" " type="tel" name="user-tel" id="tel" />
+                                <label class="label" for="tel" >Телефон*</label>
                             </div>
                         </div>
                             
-                            <div class="form-fild-group">
-                                <label class="form-fild-name" for="tel">Почта</label>
-                                <input class="input-box form-fild-mail" type="email" name="user-mail" id="tel" />
+                            <div class="form-fild-mail">
+                                <input class="input-box input input-mail" placeholder=" " type="email" name="user-mail" id="tel" />
+                                <label class="label" for="email">Почта*</label>
                             </div>
 
-                        <ul class="form-radio">
-                            <li class="form-radio-item">
-                                <input type="radio" name="Extreme-Barber" value="John-Smith" id="John-Smith" />
-                                <label for="John-Smith">John Smith</label>
-                            </li>
-                            <li class="form-radio-item">
-                                <input type="radio" name="Extreme-Barber" value="Michele-Doe" id="Michele-Doe" />
-                                <label for="Michele-Doe">Michele Doe</label>
-                            </li>
-                            <li class="form-radio-item">
-                                <input type="radio" name="Extreme-Barber" value="Alan-Black" id="Alan-Black" />
-                                <label for="Alan-Black">Alan Black</label>
-                            </li>
-                        </ul>
+                            <h2 class="select-title">Выберите мастера</h2>
+                            <div class="masters-choice">
+
+                                <div>
+                                    <h3 class="titli-version">Extreme Barber</h3>
+                                    <select name="extreme-barber" id="">
+                                        <option value="john-smith">John Smith</option>
+                                        <option value="michele-doe">Michele Doe</option>
+                                        <option value="alan-black">Alan Black</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <ul class="form-radio">
+                                        <h3 class="titli-version">Extreme Barber</h3>
+                                        <li class="form-radio-item">
+                                            <input type="radio" name="extreme-barber" value="john-smith" id="john-smith" />
+                                            <label for="john-smith">John Smith</label>
+                                        </li>
+                                        <li class="form-radio-item">
+                                            <input type="radio" name="extreme-barber" value="michele-doe" id="michele-doe" />
+                                            <label for="michele-doe">Michele Doe</label>
+                                        </li>
+                                        <li class="form-radio-item">
+                                            <input type="radio" name="extreme-barber" value="alan-black" id="alan-black" />
+                                            <label for="alan-black">Alan Black</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
                         <div class="form-date">
                             <label for="data">Дата и время</label>
                             <input type="datetime-local" name="data" id="data">
                         </div>
-                        <div>
+                        <div class="textarea-box">
                             <label for=""></label>
                             <textarea class="text-box" placeholder="оставить коментарий"></textarea>
                         </div>
+
                         <button class="btn-send" type="submit">отправить</button>
                     </form>
                 </div>
